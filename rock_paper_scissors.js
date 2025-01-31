@@ -24,6 +24,10 @@ function playGame(humanChoice, computerChoice) {
     
     function playRound(humanChoice, computerChoice) {
         humanChoice = String(humanChoice).toLowerCase(); // making human choice case isensetive
+        if(humanChoice == "your choice wasn't valid!") {
+            alert("Your choice wasn't valid!")
+            return "ERROR: invalid choice!"
+        }
         if (humanChoice === computerChoice) {
             return "draw";
         } else if (humanChoice == "rock" && computerChoice == "paper") {
