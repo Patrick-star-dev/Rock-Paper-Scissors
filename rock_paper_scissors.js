@@ -1,6 +1,6 @@
 function getComputerChoice() {
     compChoice = Math.floor(Math.random() * 3) + 1
-    if (compChoice == 1) { 
+    if (compChoice == 1) {
         return "rock";
     } else if (compChoice == 2) {
         return "paper";
@@ -18,7 +18,7 @@ function getHumanChoice() {
     }
 }
 
-function playGame(playRound) {
+function playGame(humanChoice, computerChoice) {
     let humanScore = 0;
     let computerScore = 0;
     
@@ -46,4 +46,11 @@ function playGame(playRound) {
             return "You win! scissors beats paper";
         }
     }
+    return playRound(humanChoice, computerChoice);
 }
+
+console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(playGame(getHumanChoice(), getComputerChoice()));
