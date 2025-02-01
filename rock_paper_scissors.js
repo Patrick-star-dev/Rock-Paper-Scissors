@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     compChoice = Math.floor(Math.random() * 3) + 1
     if (compChoice == 1) {
@@ -19,8 +22,8 @@ function getHumanChoice() {
 }
 
 function playGame(humanChoice, computerChoice) {
-    let humanScore = 0;
-    let computerScore = 0;
+    // let humanScore = 0;
+    // let computerScore = 0;
     
     function playRound(humanChoice, computerChoice) {
         humanChoice = String(humanChoice).toLowerCase(); // making human choice case isensetive
@@ -54,7 +57,16 @@ function playGame(humanChoice, computerChoice) {
 }
 
 console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(`You:${humanScore} computer:${computerScore}`);
+
 console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(`You:${humanScore} computer:${computerScore}`);
+
 console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(`You:${humanScore} computer:${computerScore}`);
+
 console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(`You:${humanScore} computer:${computerScore}`);
+
 console.log(playGame(getHumanChoice(), getComputerChoice()));
+console.log(`You:${humanScore} computer:${computerScore}`);
