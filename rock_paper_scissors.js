@@ -57,6 +57,7 @@ function playGame(humanChoice, computerChoice) {
     playRound(humanChoice, computerChoice);
     playRound(humanChoice, computerChoice);
     console.log(`You:${humanScore} computer:${computerScore}`);
+    alert(`You:${humanScore} computer:${computerScore}`);
 }
 
 playGame(getHumanChoice(), getComputerChoice());
